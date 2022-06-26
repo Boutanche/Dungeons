@@ -1,16 +1,20 @@
 package com.mygdx.dsu;
 
 import com.badlogic.gdx.ApplicationAdapter;
+import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
+import com.mygdx.dsu.screens.MainMenu;
 
-public class DSUGame extends ApplicationAdapter {
+public class DSUGame extends Game {
 	SpriteBatch batch;
 	Texture img;
-	
+
 	@Override
 	public void create () {
+
 		batch = new SpriteBatch();
 		img = new Texture("badlogic.jpg");
 	}
